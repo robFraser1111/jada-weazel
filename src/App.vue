@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <ComingSoon msg="Coming soon"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ComingSoon from './components/ComingSoon.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    ComingSoon
   }
 }
 </script>
 
 <style>
+html {
+  background: black;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vw;
+  font-family: Lato, Helvetica, Arial, sans-serif;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: white;
 }
 </style>
